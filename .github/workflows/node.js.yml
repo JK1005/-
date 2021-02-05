@@ -21,6 +21,12 @@ jobs:
             - name: Run
               run: npm install
             - run: node dkd_coin.js
+            - name: Run
+              run: npm install
+            - run: node dkd.js
+            - name: Run
+              run: npm install
+            - run: node dkdsp.js
               env:
                 dkdurl: ${{ secrets.dkdurl }}
                 dkdbody: ${{ secrets.dkdbody }}
